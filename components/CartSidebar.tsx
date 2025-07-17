@@ -29,7 +29,7 @@ const CartSidebar = ({ isOpen, onClose }: CartSidebarProps) => {
   };
 
   const sendCartToWhatsApp = () => {
-    const phoneNumber = "919876543210"; 
+    const phoneNumber = "919265571740"; 
 
     let message = `🛒 *New Order Request*\n\n`;
 
