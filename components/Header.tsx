@@ -19,6 +19,8 @@ const Header = () => {
     { name: "Products", href: "/products" },
     { name: "Why Mitray", href: "/why-mitray" },
     { name: "Contact", href: "/contact" },
+    { name: "Export", href: "/export" },
+
   ];
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
