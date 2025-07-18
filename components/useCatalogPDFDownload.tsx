@@ -1,6 +1,6 @@
 import { useRef, useCallback } from 'react';
 // @ts-ignore
-const html2pdf = require('html2pdf.js');
+// import html2pdf from 'html2pdf.js';
 
 
 export const useCatalogPDFDownload = () => {
@@ -15,6 +15,8 @@ export const useCatalogPDFDownload = () => {
     try {
       // Show loading state (you can add a loading spinner here)
       console.log('Generating PDF...');
+      // @ts-ignore
+      const html2pdf = (await import('html2pdf.js')).default;
 
       // Configure html2pdf options
       const options = {

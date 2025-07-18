@@ -2,11 +2,11 @@
 "use client";
 
 import React from "react";
-import { Leaf, Award, Globe, Truck, Star, Shield } from "lucide-react";
+import { Leaf, Award, Globe, Truck, Shield } from "lucide-react";
 import { useCatalogPDFDownload } from "@/components/useCatalogPDFDownload";
 import CatalogPDFComponent from "@/components/CatalogPDFComponent";
 
-const ExportPage = () => {
+const Export = () => {
 
     const { catalogRef, handleCatalogDownload } = useCatalogPDFDownload();
  
@@ -296,4 +296,4 @@ const ExportPage = () => {
   );
 };
 
-export default ExportPage;
+export default Export;

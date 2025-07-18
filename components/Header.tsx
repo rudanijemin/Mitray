@@ -18,8 +18,8 @@ const Header = () => {
     { name: "Home", href: "/" },
     { name: "Products", href: "/products" },
     { name: "Why Mitray", href: "/why-mitray" },
-    { name: "Contact", href: "/contact" },
     { name: "Export", href: "/export" },
+    { name: "Contact", href: "/contact" },
 
   ];
 
