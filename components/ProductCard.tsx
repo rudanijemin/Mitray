@@ -6,6 +6,7 @@ import { ShoppingCart, Star } from 'lucide-react';
 import { Product } from '@/types/product';
 import { cartStore } from '@/store/cartStore';
 import { observer } from 'mobx-react-lite';
+import Link from 'next/link';
 
 interface ProductCardProps {
   product: Product;
@@ -20,11 +21,13 @@ const ProductCard = ({ product }: ProductCardProps) => {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
       <div className="relative">
+        <Link href={`/products/${product.slug}`}>
         <img
-          src={product.image}
+          src={product.image[0]}
           alt={product.name}
           className="w-full h-48 object-cover"
         />
+        </Link>
         <div className="absolute top-4 right-4 bg-white rounded-full p-2 shadow-md">
           <Star className="w-4 h-4 text-yellow-400 fill-current" />
         </div>

@@ -104,7 +104,7 @@ const CartSidebar = ({ isOpen, onClose }: CartSidebarProps) => {
                   <div key={item.id} className="bg-gray-50 rounded-lg p-4">
                     <div className="flex items-start space-x-4">
                       <img
-                        src={item.image}
+                        src={item.image?.[0]}
                         alt={item.name}
                         className="w-16 h-16 object-cover rounded-lg"
                       />
@@ -174,7 +174,7 @@ const CartSidebar = ({ isOpen, onClose }: CartSidebarProps) => {
 
           {/* Footer */}
           {cartStore?.items.length > 0 && (
-            <div className="border-t border-gray-200 p-6">
+            <div className="border-t bo der-gray-200 p-6">
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-semibold text-gray-800">

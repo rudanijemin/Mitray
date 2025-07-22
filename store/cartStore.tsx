@@ -10,12 +10,12 @@ class CartStore {
     makeAutoObservable(this);
   }
 
-  addItem(product: Product) {
+  addItem(product: Product , qty:number = 1) {
     const existing = this.items.find((item) => item.id === product.id);
     if (existing) {
-      existing.quantity += 1;
+      existing.quantity += qty;
     } else {
-      this.items.push({ ...product, quantity: 1 });
+      this.items.push({ ...product, quantity: qty });
       this.itemCount += 1;
     }
 
