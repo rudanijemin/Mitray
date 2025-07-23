@@ -152,7 +152,7 @@ const ProductDetailClient = observer(({ product }: { product: any }) => {
               ))}
             </ul>
           </div>
-          
+
           <div className="text-3xl font-bold text-orange-600">
             ₹{product.price}
             <span className="text-lg text-gray-500 font-normal ml-2">
@@ -178,7 +178,7 @@ const ProductDetailClient = observer(({ product }: { product: any }) => {
                 +
               </button>
             </div>
-          </div>
+          </div>  
 
           <button
             onClick={() => cartStore.addItem(product, quantity)}

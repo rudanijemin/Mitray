@@ -5,6 +5,7 @@ class CartStore {
   items: CartItem[] = [];
   total: number = 0;
   itemCount: number = 0;
+  isCartOpen: boolean = false;
 
   constructor() {
     makeAutoObservable(this);
@@ -47,10 +48,15 @@ class CartStore {
   }
 }
 
+setCartOpen(isOpen: boolean) {
+    this.isCartOpen = isOpen;
+}
+
   clearCart() {
     this.items = [];
     this.total = 0;
     this.itemCount = 0;
+    this.isCartOpen = false;
   }
 }
 

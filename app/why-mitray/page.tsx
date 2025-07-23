@@ -63,6 +63,83 @@ const WhyMitray = () => {
       {/* Ghee Comparison Table */}
       <GheeComparisonTable />
 
+      {/* Video Gallery Section */}
+    <section className="py-16 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            From Our Farm to You – Watch the Journey
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Experience how our natural and organic products are prepared with love and care – straight from farm to your home.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* Milk Collection Video */}
+          <div className="relative group rounded-lg overflow-hidden shadow-lg">
+            <video
+              className="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300"
+              autoPlay
+              muted
+              loop
+              playsInline
+              src="/videos/milk.mp4"
+            />
+            <div className="absolute bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4 w-full">
+              <h3 className="text-white font-semibold text-lg">Fresh Milk Collection</h3>
+            </div>
+          </div>
+
+          {/* Ghee Preparation Video */}
+          <div className="relative group rounded-lg overflow-hidden shadow-lg">
+            <video
+              className="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300"
+              autoPlay
+              muted
+              loop
+              playsInline
+              src="/videos/ghee.mp4"
+            />
+            <div className="absolute bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4 w-full">
+              <h3 className="text-white font-semibold text-lg">Traditional Ghee Making</h3>
+            </div>
+          </div>
+
+          {/* Chilli Processing Video */}
+          <div className="relative group rounded-lg overflow-hidden shadow-lg">
+            <video
+              className="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300"
+              autoPlay
+              muted
+              loop
+              playsInline
+              src="/videos/chilli.mp4"
+            />
+            <div className="absolute bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4 w-full">
+              <h3 className="text-white font-semibold text-lg">Organic Chilli Drying</h3>
+            </div>
+          </div>
+
+          {/* Turmeric Powder Video */}
+          <div className="relative group rounded-lg overflow-hidden shadow-lg">
+            <video
+              className="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300"
+              autoPlay
+              muted
+              loop
+              playsInline
+              src="/videos/turmeric.mp4"
+            />
+            <div className="absolute bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4 w-full">
+              <h3 className="text-white font-semibold text-lg">Turmeric Powder Grinding</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
 
       {/* Main Reasons Section */}
       <section className="py-16 bg-white">

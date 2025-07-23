@@ -16,6 +16,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
     const handleAddToCart = () => {
     cartStore.addItem(product);
+    cartStore.setCartOpen(true);
   };
 
   return (

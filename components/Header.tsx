@@ -11,7 +11,6 @@ import { observer } from "mobx-react-lite";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isCartOpen, setIsCartOpen] = useState(false);
   const pathname = usePathname();
 
   const navItems = [
@@ -24,7 +23,8 @@ const Header = () => {
   ];
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-  const toggleCart = () => setIsCartOpen(!isCartOpen);
+  const toggleCart = () =>{ 
+    cartStore.setCartOpen(!cartStore?.isCartOpen);}
 
   return (
     <>
@@ -109,8 +109,8 @@ const Header = () => {
           )}
         </div>
       </header>
-
-      <CartSidebar isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
+          
+      <CartSidebar isOpen={cartStore?.isCartOpen} onClose={() => cartStore.setCartOpen(false)} />
     </>
   );
 };
