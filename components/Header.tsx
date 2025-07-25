@@ -24,7 +24,8 @@ const Header = () => {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const toggleCart = () =>{ 
-    cartStore.setCartOpen(!cartStore?.isCartOpen);}
+    cartStore.setCartOpen(!cartStore?.isCartOpen);
+  };
 
   return (
     <>

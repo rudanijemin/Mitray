@@ -3,7 +3,7 @@ import { Product, CartItem } from "@/types/product";
 
 class CartStore {
   items: CartItem[] = [];
-  total: number = 0;
+  total: number = 0;  
   itemCount: number = 0;
   isCartOpen: boolean = false;
 
